@@ -1,0 +1,71 @@
+:root {
+	--clr-primary: #01bf71;
+	--clr-star: #f3d00c;
+	--clr-secondary: #18a337;
+	--clr-white: #fff;
+	--clr-bg: #eee;
+	--clr-black: #000;
+	--clr-dark: #0000008c;
+}
+
+.container .title {
+	color: var(--clr-white);
+	text-align: center;
+	font-size: 2rem;
+	margin: 2rem 0 1rem;
+}
+.title .query-title {
+	color: var(--clr-white);
+}
+.film-contant {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 2rem;
+	justify-content: center;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 5%;
+}
+.film-contant > div {
+	color: var(--clr-white);
+	display: flex;
+	margin-bottom: 2.5rem;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--clr-dark);
+	padding: 1rem;
+}
+.film-contant > div > img {
+	max-width: 100%;
+}
+.film-contant > div > img,
+.film-contant > div > h2,
+.film-contant > div > p {
+	margin-bottom: 1rem;
+}
+.film-contant svg {
+	color: var(--clr-star);
+}
+
+/*---------button------------*/
+.film-contant > div a {
+	background-color: var(--clr-primary);
+	border: 0.1rem solid var(--clr-primary);
+	border-radius: 1.9rem;
+	padding: 0.6rem 0.5rem;
+	align-items: center;
+	color: var(--clr-white);
+	text-align: center;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.film-contant > div a:hover {
+	background-color: transparent;
+	color: var(--clr-primary);
+}
+@media (max-width: 768px) {
+	.film-contant {
+		padding: 2rem;
+	}
+}

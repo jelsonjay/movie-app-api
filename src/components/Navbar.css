@@ -1,0 +1,49 @@
+:root {
+	--clr-primary: #01bf71;
+	--clr-secondary: #18a337;
+	--clr-white: #fff;
+	--clr-bg: #eee;
+	--clr-black: #000;
+	--clr-dark: #0000008c;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem 2rem;
+	background: var(--clr-dark);
+	color: var(--clr-white);
+}
+#navbar h2 a {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--clr-white);
+}
+#navbar form {
+	display: flex;
+	gap: 0.5rem;
+	border: none;
+}
+#navbar input {
+	padding: 0.2rem 0.8rem;
+	border-radius: 1.9rem;
+	border: none;
+}
+#navbar form button {
+	background-color: var(--clr-primary);
+	border: 0.1rem solid var(--clr-primary);
+	border-radius: 0.3rem;
+	font-size: 1.5rem;
+	display: flex;
+	padding: 0.5rem;
+	align-items: center;
+	color: var(--clr-white);
+	cursor: pointer;
+	transition: 0.3s;
+}
+#navbar form button:hover {
+	background-color: transparent;
+	color: var(--clr-primary);
+}
